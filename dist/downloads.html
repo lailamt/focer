@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>FOCER</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">FOCER v1.1.b</a>
+        <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i
+                class="fas fa-bars"></i></button>
+
+        <!-- Navbar-->
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAbout"
+                            aria-expanded="false" aria-controls="collapseLayouts">
+                            <div class="sb-nav-link-icon"><i class="far fa-window-maximize"></i></div>
+                            SOBRE A FOCER
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseAbout" aria-labelledby="headingOne"
+                            data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="index.html">Apresentação</a>
+                                <a class="nav-link" href="profagua_ufba.html">ProfÁgua - Polo UFBA</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInterface"
+                            aria-expanded="false" aria-controls="collapseLayouts">
+                            <div class="sb-nav-link-icon"><i class="fas fa-water"></i></div>
+                            INTERFACE
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseInterface" aria-labelledby="headingOne"
+                            data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="re_recarga.php">Relatório de recarga</a>
+                                <a class="nav-link" href="mapa_interativo.html">Mapa interativo</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link" href="downloads.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-download"></i></div>
+                            DOWNLOADS
+                        </a>
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="card">
+                    <div class="card-body">
+                        <center><img src="/imagens/logo_focer2.png" style="width: 50vw;"></center>
+                        <div class="card-body" style="border: 1px solid rgba(0, 0, 0, 0.125);border-radius: 0.25rem;">
+                            <p>
+                                <b>
+                                    Downloads da FOCER
+                                </b>
+                            </p>
+                            <p>
+                                A seção de downloads da FOCER apresenta uma série de arquivos importantes que você
+                                poderá utilizar para conhecer melhor a ferramenta e utilizá-la da forma correta.
+                                Disponibilizamos o manual do usuário, atualizado para a última versão da ferramenta,
+                                onde você poderá explorar todas as funcionalidades e etapas para obtenção dos relatórios
+                                de estimativa da taxa de recarga aquífera. Aqui você encontrará também os componentes do
+                                mapa interativo, assim como os modelos digitais de elevação utilizados na elaboração do mesmo.
+                            </p>
+                            <b>Manual do usuário</b>
+                            <br>
+                            <a href="scr_download.php?arquivo=FOCER_manual_do_usuário.pdf">
+                                Manual do usuário em PT/BR</a>
+                            <br>
+                            <br>
+                            <b>Planilhas</b>
+                            <br>
+                            <a href="scr_download.php?arquivo=FOCER_planilha_exemplo.csv">
+                                Planilha para inserção de dados</a>
+                            <br>
+                            <br>
+                            <b>Arquivos shapefile</b>
+                            <br>
+                            <i>Bacias hidrográficas ottocodificadas (nível 3)</i>
+                            <br>
+                            <a href="scr_download.php?arquivo=bacia_rio_corrente_ottonv3_sirgas2000_utm23s.rar">
+                                Bacia hidrográfica do rio Corrente (SIRGAS 2000 UTM 23S)</a>
+                            <br>
+                            <a href="scr_download.php?arquivo=bacia_rio_grande_ottonv3_sirgas2000_utm23s.rar">
+                                Bacia hidrográfica do rio Grande (SIRGAS 2000 UTM 23S)</a>
+                            <br>
+                            <i>Hidrografia ottocodificada</i>
+                            <br>
+                            <a href="scr_download.php?arquivo=hidrografia_rio_corrente_sirgas2000_utm23s.rar">
+                                Hidrografia rio Corrente - IBGE (SIRGAS 2000 UTM 23S)</a>
+                            <br>
+                            <a href="scr_download.php?arquivo=hidrografia_rio_grande_sirgas2000_utm23s.rar">
+                                Hidrografia rio Grande - IBGE (SIRGAS 2000 UTM 23S)</a>
+                            <br>
+                            <i>Sistema Aquífero Urucuia - SAU</i>
+                            <br>
+                            <a href="scr_download.php?arquivo=SAU_sirgas2000_utm23s.rar">
+                                Sistema Aquífero Urucuia - SAU (SIRGAS 2000 UTM 23S)</a>
+                            <br>
+                            <a href="scr_download.php?arquivo=SAU_rio_corrente_sirgas2000_utm23s.rar">
+                                SAU - Área de Influência da bacia do rio Corrente (SIRGAS 2000 UTM 23S)</a>
+                            <br>
+                            <a href="scr_download.php?arquivo=SAU_rio_grande_sirgas2000_utm23s.rar">
+                                SAU - Área de Influência da bacia do rio Grande (SIRGAS 2000 UTM 23S)</a>
+                            <br>
+                            <i>Estações fluviométricas</i>
+                            <br>
+                            <a href="scr_download.php?arquivo=etflu_rio_corrente_sirgas2000_utm23s.rar">
+                                Estações fluviométricas (Bacia do rio Corrente) (SIRGAS 2000 UTM 23S)</a>
+                            <br>
+                            <a href="scr_download.php?arquivo=etflu_rio_grande_sirgas2000_utm23s.rar">
+                                Estações fluviométricas (Bacia do rio Grande) (SIRGAS 2000 UTM 23S)</a>
+                            <br>
+                            <br>
+                            <b>Modelos Digitais de Elevação</b>
+                            <br>
+                            <a href="scr_download.php?arquivo=mde_rio_corrente_sirgas2000_utm23s.rar">MDE bacia
+                                hidrográfica do rio Corrente (SIRGAS 2000 UTM 23S)</a>
+                            <br>
+                            <a href="scr_download.php?arquivo=mde_rio_grande_sirgas2000_utm23s.rar">MDE bacia
+                                hidrográfica
+                                do rio Grande (SIRGAS 2000 UTM 23S)</a>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Este obra está licenciada com uma Licença Creative Commons de atribuição
+                            não comercial 4.0 internacional.</div>
+                        <div>
+                            <a href="#">Política de privacidade</a>
+                            &middot;
+                            <a href="#">Termos &amp; Condições</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+
+
+
+</body>
+
+</html>
